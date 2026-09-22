@@ -1,0 +1,2366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BrightHome</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bright-navbar sticky-top ">
+
+    <div class="container-fluid navbar-container">
+
+        <!-- Logo -->
+        <a href="#" class="navbar-brand bright-logo">
+
+            <i class="fa-regular fa-lightbulb logo-icon"></i>
+
+            <div class="logo-text">
+                <span class="logo-title">Miller Lights</span>
+                <span class="logo-subtitle">
+                    Architecture Lighting / LED Lighting Supply & Manufacturing
+                </span>
+            </div>
+
+        </a>
+
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <!-- Navigation -->
+            <ul class="navbar-nav ms-auto bright-menu">
+
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#project" class="nav-link">
+                        Project
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#catalogue" class="nav-link">
+                        Catalogue
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HOME / HERO SECTION
+========================= -->
+
+<section id="home" class="miller-home">
+
+    <!-- Decorative light -->
+    <div class="light-glow"></div>
+
+    <div class="container-fluid">
+
+        <div class="row align-items-center min-vh-100">
+
+            <!-- =========================
+                 LEFT CONTENT
+            ========================= -->
+
+            <div class="col-lg-6 col-md-12">
+
+                <div class="home-content">
+
+                    <!-- Small label -->
+
+                    <div class="home-label reveal">
+                        <span></span>
+                        ARCHITECTURAL LIGHTING
+                    </div>
+
+
+                    <!-- Main heading -->
+
+                    <h1 class="home-title reveal">
+
+                        MILLER LIGHTS
+                        <br>
+
+                        <span>ARCHITECTURE</span>
+
+                        <br>
+
+                        <span class="gold-text">
+                            LIGHTING.
+                        </span>
+
+                    </h1>
+
+
+                    <!-- Description -->
+
+                    <p class="home-description reveal">
+
+                        We create refined architectural lighting solutions
+                        that transform spaces through light, shadow and
+                        atmosphere.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 RIGHT IMAGE
+            ========================= -->
+
+            <div class="col-lg-6 col-md-12">
+
+                <div class="home-visual reveal">
+
+                    <!-- Main image -->
+
+                    <div class="image-wrapper">
+
+                        <img src="/logo/logo.png"
+                             alt="Miller Lights Architectural Lighting"
+                             class="hero-light-image">
+
+                        <!-- Image overlay -->
+
+                        <div class="image-overlay"></div>
+
+                    </div>
+
+
+                    <!-- Floating information -->
+
+                    <!-- <div class="visual-card">
+
+                        <span class="visual-number">
+                            01
+                        </span>
+
+                        <div>
+                            <small>
+                                LIGHTING
+                            </small>
+
+                            <strong>
+                                THAT DEFINES
+                                <br>
+                                SPACE
+                            </strong>
+                        </div>
+
+                    </div> -->
+
+
+                    <!-- Vertical text -->
+
+                    <!-- <div class="vertical-text">
+                        MILLER LIGHTS
+                    </div> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Scroll indicator -->
+
+    <div class="scroll-indicator">
+
+        <span>SCROLL TO EXPLORE</span>
+
+        <div class="scroll-line"></div>
+
+    </div>
+
+    <script>
+
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+
+    const revealObserver =
+        new IntersectionObserver(
+
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("show");
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.15
+            }
+
+        );
+
+
+    revealElements.forEach((element) => {
+
+        revealObserver.observe(element);
+
+    });
+
+</script>
+
+</section>
+
+
+<!-- ================= ABOUT US SECTION ================= -->
+
+
+<section class="miller-about" id="about">
+
+    <!-- Decorative background elements -->
+    <div class="about-glow about-glow-one"></div>
+    <div class="about-glow about-glow-two"></div>
+
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+
+                <div class="about-label js-about-item">
+                    <span></span>
+                    ABOUT US
+                    <span></span>
+                </div>
+
+                <h2 class="about-heading js-about-item">
+                    Lighting Spaces With
+                    <span>Purpose & Precision</span>
+                </h2>
+
+                <p class="about-intro js-about-item">
+                    Thoughtfully designed lighting solutions for
+                    modern residential, commercial and architectural spaces.
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- Main About Content -->
+        <div class="row align-items-center g-5">
+
+            <!-- Left Image Area -->
+            <div class="col-lg-6">
+
+                <div class="about-visual js-about-left">
+
+                    <!-- Replace this image with client supplied imagery -->
+                    <img src="About/About us img.png"
+                         alt="Miller Lights architectural lighting"
+                         class="img-fluid">
+
+                    <!-- Image Overlay -->
+                    <div class="visual-overlay"></div>
+
+                    <!-- Floating Location Card -->
+                    <div class="location-card location-mumbai">
+                        <div class="location-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+
+                        <div>
+                            <small>Manufacturing Unit</small>
+                            <strong>Mumbai</strong>
+                        </div>
+                    </div>
+
+                    <!-- Second Location Card -->
+                    <div class="location-card location-tiruppur">
+                        <div class="location-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+
+                        <div>
+                            <small>Assembly Unit</small>
+                            <strong>Tiruppur</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Content -->
+            <div class="col-lg-6">
+
+                <div class="about-content js-about-right">
+
+                    <div class="content-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Designed to make
+                        <span>spaces stand out.</span>
+                    </h3>
+
+                    <p>
+                        Miller Lights is an architecture lighting company
+                        focused on delivering thoughtfully designed lighting
+                        solutions for modern residential, commercial and
+                        architectural spaces.
+                    </p>
+
+                    <p>
+                        With a manufacturing unit in <strong>Mumbai</strong>
+                        and an assembly unit in <strong>Tiruppur</strong>,
+                        we combine product capability, quality-focused
+                        assembly and project-oriented service.
+                    </p>
+
+                    <p>
+                        Our approach is centred on creating lighting solutions
+                        designed to enhance spaces with precision,
+                        performance and visual impact.
+                    </p>
+
+
+                    <!-- Location Information -->
+                    <div class="row about-location-row g-3 mt-4">
+
+                        <div class="col-sm-6">
+
+                            <div class="about-location-box">
+
+                                <div class="location-symbol">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+
+                                <div>
+                                    <span>Manufacturing</span>
+                                    <h5>Mumbai</h5>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-sm-6">
+
+                            <div class="about-location-box">
+
+                                <div class="location-symbol">
+                                    <i class="bi bi-gear"></i>
+                                </div>
+
+                                <div>
+                                    <span>Assembly</span>
+                                    <h5>Tiruppur</h5>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Bottom Highlight -->
+                    <div class="about-highlight mt-4">
+
+                        <div class="highlight-line"></div>
+
+                        <p>
+                            <i class="bi bi-lightbulb"></i>
+                            Lighting solutions designed with precision,
+                            performance and visual impact.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const aboutElements = document.querySelectorAll(
+        ".js-about-item, .js-about-left, .js-about-right"
+    );
+
+    const aboutObserver = new IntersectionObserver(
+        function (entries, observer) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("about-show");
+
+                    observer.unobserve(entry.target);
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+
+    aboutElements.forEach(function (element, index) {
+
+        element.style.transitionDelay = (index * 0.12) + "s";
+
+        aboutObserver.observe(element);
+
+    });
+
+});
+
+</script>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PROJECTS SECTION
+========================================================= -->
+
+<section class="miller-projects" id="project">
+
+    <!-- Background decoration -->
+    <div class="projects-orb projects-orb-one"></div>
+    <div class="projects-orb projects-orb-two"></div>
+
+    <div class="container-fluid px-lg-5">
+
+        <!-- Section Heading -->
+        <div class="row mb-5">
+
+            <div class="col-lg-7">
+
+                <div class="projects-eyebrow project-reveal ms-auto">
+                    <span></span>
+                    OUR PROJECTS
+                </div>
+
+                <h2 class="projects-title project-reveal">
+                    Lighting That
+                    <span>Transforms Spaces.</span>
+                </h2>
+
+            </div>
+
+            <div class="col-lg-5 d-flex align-items-end">
+
+                <p class="projects-description project-reveal">
+                    Explore selected lighting projects that demonstrate
+                    thoughtful design, precision and visual impact across
+                    residential, commercial and architectural spaces.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             PROJECT SLIDER
+        ====================================================== -->
+
+        <div class="project-slider-wrapper project-reveal">
+
+            <!-- Previous Button -->
+            <button class="project-arrow project-prev"
+                    id="projectPrev"
+                    aria-label="Previous project">
+
+                <i class="bi bi-arrow-left"></i>
+
+            </button>
+
+
+            <!-- Slider -->
+            <div class="project-slider" id="projectSlider">
+
+                <!-- Project 01 -->
+                <article class="project-slide">
+
+                    <div class="project-image-box">
+
+                        <img src="Project/project 1.png"
+                             alt="Modern architectural lighting project"
+                             loading="lazy">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <span class="project-category">
+                                ARCHITECTURAL LIGHTING
+                            </span>
+
+                            <h3>
+                                Project One
+                            </h3>
+
+                            <p>
+                                A carefully designed lighting environment
+                                created to complement the architecture
+                                and atmosphere of the space.
+                            </p>
+                        </div>
+
+                        <!-- <div class="project-link">
+                            <span>VIEW PROJECT</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div> -->
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 02 -->
+                <article class="project-slide">
+
+                    <div class="project-image-box">
+
+                        <img src="Project/project 2.png"
+                             alt="Contemporary interior lighting installation"
+                             loading="lazy">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <span class="project-category">
+                                COMMERCIAL LIGHTING
+                            </span>
+
+                            <h3>
+                                Project Two
+                            </h3>
+
+                            <p>
+                                Contemporary lighting designed to bring
+                                clarity, character and visual balance
+                                to a commercial environment.
+                            </p>
+                        </div>
+
+                        <!-- <div class="project-link">
+                            <span>VIEW PROJECT</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div> -->
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 03 -->
+                <article class="project-slide">
+
+                    <div class="project-image-box">
+
+                        <img src="Project/project 3.png"
+                             alt="Premium residential lighting project"
+                             loading="lazy">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                    </div>
+
+                    <div class="project-info"> 
+
+                         <div>
+                            <span class="project-category">
+                                RESIDENTIAL LIGHTING
+                            </span>
+
+                            <h3>
+                                Project Three
+                            </h3>
+
+                            <p>
+                                A refined lighting approach created to
+                                enhance the character and comfort of a
+                                contemporary residential space.
+                            </p>
+                        </div> 
+<!-- 
+                         <div class="project-link">
+                            <span>VIEW PROJECT</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>  -->
+
+                     </div>
+
+                </article>
+
+
+                <!-- Project 04 -->
+                <!-- <article class="project-slide">
+
+                    <div class="project-image-box">
+
+                        <img src="images/project-4.jpg"
+                             alt="Modern office architectural lighting"
+                             loading="lazy">
+
+                        <div class="project-number">
+                            04
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <span class="project-category">
+                                OFFICE LIGHTING
+                            </span>
+
+                            <h3>
+                                Project Four
+                            </h3>
+
+                            <p>
+                                Functional and visually balanced lighting
+                                designed around the needs of a modern
+                                working environment.
+                            </p>
+                        </div> -->
+
+                        <!-- <div class="project-link">
+                            <span>VIEW PROJECT</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div> -->
+
+                    <!-- </div> -->
+
+                <!-- </article> -->
+
+
+                <!-- Project 05 -->
+                <!-- <article class="project-slide">
+
+                    <div class="project-image-box">
+
+                        <img src="images/project-5.jpg"
+                             alt="Decorative lighting installation"
+                             loading="lazy">
+
+                        <div class="project-number">
+                            05
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <span class="project-category">
+                                DECORATIVE LIGHTING
+                            </span>
+
+                            <h3>
+                                Project Five
+                            </h3>
+
+                            <p>
+                                Decorative lighting elements integrated
+                                into the architecture to create a distinctive
+                                visual experience.
+                            </p>
+                        </div> -->
+
+                        <!-- <div class="project-link">
+                            <span>VIEW PROJECT</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div> -->
+
+                    <!-- </div> -->
+
+                <!-- </article> -->
+
+
+                <!-- Project 06 -->
+                <!-- <article class="project-slide">
+
+                    <div class="project-image-box">
+
+                        <img src="images/project-6.jpg"
+                             alt="Architectural facade lighting project"
+                             loading="lazy">
+
+                        <div class="project-number">
+                            06
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <span class="project-category">
+                                FACADE LIGHTING
+                            </span>
+
+                            <h3>
+                                Project Six
+                            </h3>
+
+                            <p>
+                                Architectural illumination developed to
+                                highlight structural forms and create
+                                visual depth.
+                            </p>
+                        </div> -->
+
+                        <!-- <div class="project-link">
+                            <span>VIEW PROJECT</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div> -->
+
+                    <!-- </div>
+
+                </article> -->
+
+            </div>
+
+
+            <!-- Next Button -->
+            <button class="project-arrow project-next"
+                    id="projectNext"
+                    aria-label="Next project">
+
+                <i class="bi bi-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================================
+             SLIDER CONTROLS
+        ====================================================== -->
+
+        <div class="project-controls project-reveal">
+
+            <div class="project-progress">
+
+                <div class="project-progress-track">
+                    <div class="project-progress-bar"
+                         id="projectProgressBar">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="project-counter">
+
+                <span id="projectCurrent">
+                    01
+                </span>
+
+                <span class="counter-line"></span>
+
+                <span id="projectTotal">
+                    06
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             STATISTICS
+        ====================================================== -->
+
+        <div class="row project-statistics project-reveal">
+
+            <div class="col-md-6">
+
+                <div class="project-stat">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-buildings"></i>
+                    </div>
+
+                    <div class="stat-content">
+
+                        <div class="stat-number">
+                            <span class="counter-number"
+                                  data-target="150">
+                                0
+                            </span><span>+</span>
+                        </div>
+
+                        <p>
+                            Projects
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="project-stat">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-heart"></i>
+                    </div>
+
+                    <div class="stat-content">
+
+                        <div class="stat-number">
+                            <span class="counter-number"
+                                  data-target="100">
+                                0
+                            </span><span>%</span>
+                        </div>
+
+                        <p>
+                            Client Satisfaction
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Client claim note -->
+        <div class="project-claim-note project-reveal">
+
+            <i class="bi bi-info-circle"></i>
+
+            <span>
+                Project and client satisfaction figures are
+                client-provided claims.
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =====================================================
+       PROJECT REVEAL ANIMATION
+    ===================================================== */
+
+    const projectRevealElements =
+        document.querySelectorAll(".project-reveal");
+
+
+    const projectRevealObserver =
+        new IntersectionObserver(function (entries, observer) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("project-visible");
+
+                    observer.unobserve(entry.target);
+                }
+
+            });
+
+        }, {
+            threshold: 0.15
+        });
+
+
+    projectRevealElements.forEach(function (element, index) {
+
+        element.style.transitionDelay =
+            (index * 0.08) + "s";
+
+        projectRevealObserver.observe(element);
+
+    });
+
+
+
+    /* =====================================================
+       PROJECT SLIDER
+    ===================================================== */
+
+    const slider =
+        document.getElementById("projectSlider");
+
+    const previousButton =
+        document.getElementById("projectPrev");
+
+    const nextButton =
+        document.getElementById("projectNext");
+
+    const currentNumber =
+        document.getElementById("projectCurrent");
+
+    const totalNumber =
+        document.getElementById("projectTotal");
+
+    const progressBar =
+        document.getElementById("projectProgressBar");
+
+
+    const slides =
+        document.querySelectorAll(".project-slide");
+
+
+    let currentProject = 0;
+
+    const totalProjects = slides.length;
+
+
+    totalNumber.textContent =
+        String(totalProjects).padStart(2, "0");
+
+
+    function getScrollAmount() {
+
+        if (!slides.length) {
+            return 0;
+        }
+
+        return slides[0].offsetWidth + 30;
+
+    }
+
+
+    function updateProjectSlider() {
+
+        const scrollAmount =
+            getScrollAmount();
+
+
+        slider.scrollTo({
+
+            left: currentProject * scrollAmount,
+
+            behavior: "smooth"
+
+        });
+
+
+        currentNumber.textContent =
+            String(currentProject + 1).padStart(2, "0");
+
+
+        const progress =
+            ((currentProject + 1) / totalProjects) * 100;
+
+
+        progressBar.style.width =
+            progress + "%";
+
+
+        slides.forEach(function (slide, index) {
+
+            slide.classList.remove("active");
+
+            if (index === currentProject) {
+
+                slide.classList.add("active");
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       NEXT BUTTON
+    ===================================================== */
+
+    nextButton.addEventListener("click", function () {
+
+        if (currentProject < totalProjects - 1) {
+
+            currentProject++;
+
+        } else {
+
+            currentProject = 0;
+
+        }
+
+        updateProjectSlider();
+
+    });
+
+
+    /* =====================================================
+       PREVIOUS BUTTON
+    ===================================================== */
+
+    previousButton.addEventListener("click", function () {
+
+        if (currentProject > 0) {
+
+            currentProject--;
+
+        } else {
+
+            currentProject = totalProjects - 1;
+
+        }
+
+        updateProjectSlider();
+
+    });
+
+
+
+    /* =====================================================
+       MOUSE DRAG
+    ===================================================== */
+
+    let isDragging = false;
+
+    let startX;
+
+    let startScrollLeft;
+
+
+    slider.addEventListener("mousedown", function (event) {
+
+        isDragging = true;
+
+        slider.classList.add("dragging");
+
+        startX = event.pageX - slider.offsetLeft;
+
+        startScrollLeft = slider.scrollLeft;
+
+    });
+
+
+    slider.addEventListener("mouseleave", function () {
+
+        isDragging = false;
+
+        slider.classList.remove("dragging");
+
+    });
+
+
+    slider.addEventListener("mouseup", function () {
+
+        isDragging = false;
+
+        slider.classList.remove("dragging");
+
+    });
+
+
+    slider.addEventListener("mousemove", function (event) {
+
+        if (!isDragging) {
+            return;
+        }
+
+        event.preventDefault();
+
+        const x =
+            event.pageX - slider.offsetLeft;
+
+        const distance =
+            (x - startX) * 1.5;
+
+        slider.scrollLeft =
+            startScrollLeft - distance;
+
+    });
+
+
+
+    /* =====================================================
+       TOUCH SWIPE
+    ===================================================== */
+
+    let touchStartX = 0;
+
+
+    slider.addEventListener("touchstart", function (event) {
+
+        touchStartX =
+            event.touches[0].clientX;
+
+    }, {
+        passive: true
+    });
+
+
+    slider.addEventListener("touchend", function (event) {
+
+        const touchEndX =
+            event.changedTouches[0].clientX;
+
+
+        const difference =
+            touchStartX - touchEndX;
+
+
+        if (Math.abs(difference) > 50) {
+
+            if (difference > 0) {
+
+                if (currentProject < totalProjects - 1) {
+                    currentProject++;
+                }
+
+            } else {
+
+                if (currentProject > 0) {
+                    currentProject--;
+                }
+
+            }
+
+            updateProjectSlider();
+
+        }
+
+    });
+
+
+
+    /* =====================================================
+       UPDATE WHEN USER SCROLLS / DRAGS
+    ===================================================== */
+
+    let scrollTimeout;
+
+
+    slider.addEventListener("scroll", function () {
+
+        clearTimeout(scrollTimeout);
+
+
+        scrollTimeout = setTimeout(function () {
+
+            const scrollPosition =
+                slider.scrollLeft;
+
+            const slideWidth =
+                getScrollAmount();
+
+
+            if (slideWidth > 0) {
+
+                const detectedProject =
+                    Math.round(
+                        scrollPosition / slideWidth
+                    );
+
+
+                currentProject =
+                    Math.max(
+                        0,
+                        Math.min(
+                            detectedProject,
+                            totalProjects - 1
+                        )
+                    );
+
+
+                currentNumber.textContent =
+                    String(currentProject + 1)
+                    .padStart(2, "0");
+
+
+                progressBar.style.width =
+                    (
+                        ((currentProject + 1) /
+                        totalProjects) * 100
+                    ) + "%";
+
+            }
+
+        }, 100);
+
+    });
+
+
+
+    /* =====================================================
+       STATISTICS COUNTER
+    ===================================================== */
+
+    const counterNumbers =
+        document.querySelectorAll(".counter-number");
+
+
+    let countersStarted = false;
+
+
+    function startCounters() {
+
+        if (countersStarted) {
+            return;
+        }
+
+        countersStarted = true;
+
+
+        counterNumbers.forEach(function (counter) {
+
+            const target =
+                Number(counter.dataset.target);
+
+            let current = 0;
+
+            const increment =
+                target / 60;
+
+
+            function animateCounter() {
+
+                current += increment;
+
+
+                if (current >= target) {
+
+                    counter.textContent =
+                        target;
+
+                    return;
+
+                }
+
+
+                counter.textContent =
+                    Math.floor(current);
+
+
+                requestAnimationFrame(
+                    animateCounter
+                );
+
+            }
+
+
+            animateCounter();
+
+        });
+
+    }
+
+
+    const statistics =
+        document.querySelector(".project-statistics");
+
+
+    const statisticsObserver =
+        new IntersectionObserver(function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    startCounters();
+
+                    statisticsObserver.disconnect();
+
+                }
+
+            });
+
+        }, {
+            threshold: 0.3
+        });
+
+
+    if (statistics) {
+
+        statisticsObserver.observe(statistics);
+
+    }
+
+
+    /* Initial state */
+
+    updateProjectSlider();
+
+});
+
+</script>
+
+</section>
+
+<!-- ================= CATALOGUE SECTION ================= -->
+
+<section class="catalogue-showcase py-5" id="catalogue">
+
+    <div class="container py-5">
+
+        <div class="row align-items-center g-5">
+
+            <!-- Left Content -->
+            <div class="col-lg-6 catalogue-content">
+
+                <div class="catalogue-label">
+                    <span></span> OUR CATALOGUE
+                </div>
+
+                <h2 class="catalogue-title">
+                   <span style="color:#04088a ;">Explore Our</span> 
+                    <span>Lighting Collection.</span>
+                </h2>
+
+                <p class="catalogue-description">
+                    Discover our carefully selected lighting solutions designed
+                    to bring elegance, functionality and character to residential,
+                    commercial and architectural spaces.
+                </p>
+
+                <div class="catalogue-features">
+
+                    <div class="catalogue-feature">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <h6>Premium Lighting</h6>
+                            <p>Modern and elegant lighting solutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="catalogue-feature">
+                        <i class="fas fa-layer-group"></i>
+                        <div>
+                            <h6>Wide Collection</h6>
+                            <p>Explore different styles and applications.</p>
+                        </div>
+                    </div>
+
+                    <div class="catalogue-feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <h6>Easy to Explore</h6>
+                            <p>View our catalogue on desktop or mobile.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- View Catalogue Button -->
+                <button
+                    class="btn catalogue-view-btn mt-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#catalogueViewer">
+
+                    <i class="fas fa-book-open me-2"></i>
+                    View Catalogue
+
+                </button>
+
+            </div>
+
+
+            <!-- Right Catalogue Card -->
+            <div class="col-lg-6">
+
+                <div class="catalogue-preview">
+
+                    <div class="catalogue-glow"></div>
+
+                    <div class="catalogue-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+
+                    <h3>Lighting Catalogue</h3>
+
+                    <p>
+                        Discover our complete range of lighting products,
+                        collections and applications.
+                    </p>
+
+                    <div class="catalogue-line"></div>
+
+                    <small>
+                        PRODUCT COLLECTION • <span style="color: #04088a;">DESIGN</span>  • LIGHTING
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= CATALOGUE VIEWER MODAL ================= -->
+
+<div class="modal fade" id="catalogueViewer" tabindex="-1">
+
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+
+        <div class="modal-content catalogue-modal">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    <i class="fas fa-book-open me-2"></i>
+                    Lighting Catalogue
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body p-0">
+
+                <!-- Replace catalogue.pdf with your actual PDF -->
+                <iframe
+                    src="catalogue.pdf"
+                    class="catalogue-frame"
+                    title="Lighting Catalogue">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const catalogueSection =
+            document.querySelector(".catalogue-showcase");
+
+        const catalogueContent =
+            document.querySelector(".catalogue-content");
+
+        const cataloguePreview =
+            document.querySelector(".catalogue-preview");
+
+
+        const observer = new IntersectionObserver(
+            function (entries) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        catalogueContent.style.opacity = "1";
+                        catalogueContent.style.transform =
+                            "translateX(0)";
+
+                        cataloguePreview.style.opacity = "1";
+                        cataloguePreview.style.transform =
+                            "translateX(0)";
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.2
+            }
+        );
+
+
+        /* Initial animation state */
+
+        catalogueContent.style.opacity = "0";
+        catalogueContent.style.transform =
+            "translateX(-50px)";
+        catalogueContent.style.transition =
+            "all 0.8s ease";
+
+
+        cataloguePreview.style.opacity = "0";
+        cataloguePreview.style.transform =
+            "translateX(50px)";
+        cataloguePreview.style.transition =
+            "all 0.8s ease";
+
+
+        observer.observe(catalogueSection);
+
+    });
+
+</script>
+
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact-area py-5" id="contact">
+
+    <div class="container py-5">
+
+        <!-- Section Heading -->
+        <div class="contact-heading text-center mb-5">
+
+            <div class="contact-label">
+                <span></span> GET IN TOUCH <span></span>
+            </div>
+
+            <h2>
+                Let's Create Something
+                <strong>Amazing.</strong>
+            </h2>
+
+            <p>
+                Have a project, lighting requirement or enquiry?
+                Send us a message and our team will get back to you.
+            </p>
+
+        </div>
+
+
+        <div class="row g-5 align-items-stretch">
+
+            <!-- LEFT SIDE -->
+
+            <div class="col-lg-5">
+
+                <div class="contact-intro">
+
+                    <h3>
+                        Let's Talk
+                        <i class="fas fa-comments"></i>
+                    </h3>
+
+                    <p>
+                        Whether you are planning a residential,
+                        commercial or architectural project,
+                        we are here to help you find the right
+                        lighting solution.
+                    </p>
+
+
+                    <!-- Contact Information -->
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <small>CALL US</small>
+                            <h6>+91 87549 33179</h6>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <small>EMAIL US</small>
+                            <h6>info@example.com</h6>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+
+                        <div>
+                            <small>VISIT US</small>
+                            <h6>Our Manufacturing & Assembly Unit</h6>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Buttons -->
+
+                    <div class="contact-buttons mt-4">
+
+                        <a href="https://wa.me/918754933179"
+                           target="_blank"
+                           class="whatsapp-contact">
+
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Us
+
+                        </a>
+
+
+                        <!-- <a href="#catalogue"
+                           class="catalogue-contact">
+
+                            <i class="fas fa-book-open"></i>
+                            View Catalogue
+
+                        </a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE FORM -->
+
+            <div class="col-lg-7">
+
+                <div class="contact-form-box">
+
+                    <div class="form-top">
+
+                        <h3>Send an Enquiry</h3>
+
+                        <p>
+                            Fill in the details below and
+                            we'll get in touch with you.
+                        </p>
+
+                    </div>
+
+
+                    <form id="enquiryForm" novalidate>
+
+                        <div class="row g-4">
+
+                            <!-- Name -->
+
+                            <div class="col-md-6">
+
+                                <label for="visitorName">
+                                    Your Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="visitorName"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                    required>
+
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+
+                            </div>
+
+
+                            <!-- Email -->
+
+                            <div class="col-md-6">
+
+                                <label for="visitorEmail">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="visitorEmail"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                    required>
+
+                                <div class="invalid-feedback">
+                                    Please enter a valid email.
+                                </div>
+
+                            </div>
+
+
+                            <!-- Phone -->
+
+                            <div class="col-md-6">
+
+                                <label for="visitorPhone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="visitorPhone"
+                                    class="form-control"
+                                    placeholder="Enter phone number"
+                                    maxlength="10"
+                                    required>
+
+                                <div class="invalid-feedback">
+                                    Enter a valid 10-digit phone number.
+                                </div>
+
+                            </div>
+
+
+                            <!-- Purpose -->
+
+                            <div class="col-md-6">
+
+                                <label for="visitorPurpose">
+                                    Purpose / Enquiry
+                                </label>
+
+                                <select
+                                    id="visitorPurpose"
+                                    class="form-select"
+                                    required>
+
+                                    <option value="">
+                                        Select enquiry
+                                    </option>
+
+                                    <option>
+                                        Residential Lighting
+                                    </option>
+
+                                    <option>
+                                        Commercial Lighting
+                                    </option>
+
+                                    <option>
+                                        Architectural Lighting
+                                    </option>
+
+                                    <option>
+                                        Product Enquiry
+                                    </option>
+
+                                    <option>
+                                        Other
+                                    </option>
+
+                                </select>
+
+                                <div class="invalid-feedback">
+                                    Please select an enquiry type.
+                                </div>
+
+                            </div>
+
+
+                            <!-- Message -->
+
+                            <div class="col-12">
+
+                                <label for="visitorMessage">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="visitorMessage"
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Tell us about your requirement..."
+                                    required></textarea>
+
+                                <div class="invalid-feedback">
+                                    Please enter your enquiry.
+                                </div>
+
+                            </div>
+
+
+                            <!-- Submit -->
+
+                            <div class="col-12">
+
+                                <button
+                                    type="submit"
+                                    class="contact-submit">
+
+                                    Send Enquiry
+                                    <i class="fas fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+                    <!-- Message -->
+
+                    <div
+                        id="formMessage"
+                        class="form-message">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const contactSection =
+        document.querySelector(".contact-area");
+
+    const contactIntro =
+        document.querySelector(".contact-intro");
+
+    const contactForm =
+        document.querySelector(".contact-form-box");
+
+
+    /* Initial Animation */
+
+    contactIntro.style.opacity = "0";
+    contactIntro.style.transform = "translateX(-50px)";
+    contactIntro.style.transition = "all 0.8s ease";
+
+
+    contactForm.style.opacity = "0";
+    contactForm.style.transform = "translateX(50px)";
+    contactForm.style.transition = "all 0.8s ease";
+
+
+    /* Scroll Animation */
+
+    const observer = new IntersectionObserver(
+        function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    contactIntro.style.opacity = "1";
+                    contactIntro.style.transform =
+                        "translateX(0)";
+
+                    contactForm.style.opacity = "1";
+                    contactForm.style.transform =
+                        "translateX(0)";
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+
+    observer.observe(contactSection);
+
+
+    /* ================= FORM VALIDATION ================= */
+
+    const form =
+        document.getElementById("enquiryForm");
+
+    const message =
+        document.getElementById("formMessage");
+
+
+    form.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        event.stopPropagation();
+
+
+        const name =
+            document.getElementById("visitorName");
+
+        const email =
+            document.getElementById("visitorEmail");
+
+        const phone =
+            document.getElementById("visitorPhone");
+
+        const purpose =
+            document.getElementById("visitorPurpose");
+
+        const enquiry =
+            document.getElementById("visitorMessage");
+
+
+        /* Phone validation */
+
+        const phonePattern =
+            /^[6-9][0-9]{9}$/;
+
+
+        let valid = true;
+
+
+        if (name.value.trim() === "") {
+            name.classList.add("is-invalid");
+            valid = false;
+        } else {
+            name.classList.remove("is-invalid");
+        }
+
+
+        if (!email.validity.valid) {
+            email.classList.add("is-invalid");
+            valid = false;
+        } else {
+            email.classList.remove("is-invalid");
+        }
+
+
+        if (!phonePattern.test(phone.value.trim())) {
+            phone.classList.add("is-invalid");
+            valid = false;
+        } else {
+            phone.classList.remove("is-invalid");
+        }
+
+
+        if (purpose.value === "") {
+            purpose.classList.add("is-invalid");
+            valid = false;
+        } else {
+            purpose.classList.remove("is-invalid");
+        }
+
+
+        if (enquiry.value.trim() === "") {
+            enquiry.classList.add("is-invalid");
+            valid = false;
+        } else {
+            enquiry.classList.remove("is-invalid");
+        }
+
+
+        /* If everything is valid */
+
+        if (valid) {
+
+            message.className =
+                "form-message success";
+
+            message.innerHTML =
+                "✓ Your enquiry is ready to send. We will get back to you shortly.";
+
+
+            /*
+             * Temporary WhatsApp solution.
+             *
+             * Later replace this with your backend
+             * WhatsApp Business Cloud API.
+             */
+
+            const whatsappText =
+                "New Enquiry%0A%0A" +
+                "Name: " + encodeURIComponent(name.value) +
+                "%0AEmail: " + encodeURIComponent(email.value) +
+                "%0APhone: " + encodeURIComponent(phone.value) +
+                "%0APurpose: " + encodeURIComponent(purpose.value) +
+                "%0AMessage: " + encodeURIComponent(enquiry.value);
+
+
+            setTimeout(function () {
+
+                window.open(
+                    "https://wa.me/918754933179?text=" +
+                    whatsappText,
+                    "_blank"
+                );
+
+            }, 700);
+
+
+            form.reset();
+
+        } else {
+
+            message.className =
+                "form-message error";
+
+            message.innerHTML =
+                "Please check the highlighted fields and try again.";
+
+        }
+
+    });
+
+});
+
+</script>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="miller-footer">
+
+    <div class="container">
+
+        <div class="row gy-5">
+
+            <!-- Company -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="footer-brand">
+
+                    <h2>
+                        MILLER <span>LIGHTS</span>
+                    </h2>
+
+                    <p class="footer-tagline">
+                        ARCHITECTURE LIGHTING
+                    </p>
+
+                </div>
+
+                <p class="footer-description">
+                    Thoughtfully designed lighting solutions for
+                    modern residential, commercial and
+                    architectural spaces.
+                </p>
+
+                <a href="#contact" class="footer-cta">
+                    Let's Work Together
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+
+                <h5 class="footer-title">
+                    QUICK LINKS
+                </h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#project">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#catalogue">Catalogue</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="col-lg-3 col-md-6">
+
+                <h5 class="footer-title">
+                    LIGHTING
+                </h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#project">
+                            Residential Lighting
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#project">
+                            Commercial Lighting
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#project">
+                            Architectural Lighting
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#catalogue">
+                            Lighting Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Project Enquiry
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="col-lg-3 col-md-6">
+
+                <h5 class="footer-title">
+                    CONTACT
+                </h5>
+
+                <div class="footer-contact">
+
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+918754933179">
+                            +91 87549 33179
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@example.com">
+                            info@example.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Manufacturing Unit — Mumbai
+                    </p>
+
+                    <p>
+                        <i class="fas fa-industry"></i>
+                        Assembly Unit — Tiruppur
+                    </p>
+
+                </div>
+
+
+                <!-- Social Icons -->
+
+                <div class="footer-social">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://wa.me/918754933179"
+                       target="_blank"
+                       aria-label="WhatsApp">
+
+                        <i class="fab fa-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Miller Lights. All Rights Reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const footerItems =
+        document.querySelectorAll(
+            ".miller-footer .col-lg-4, .miller-footer .col-lg-2, .miller-footer .col-lg-3"
+        );
+
+    const footerObserver =
+        new IntersectionObserver(function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform =
+                        "translateY(0)";
+
+                }
+
+            });
+
+        }, {
+            threshold: 0.15
+        });
+
+
+    footerItems.forEach(function (item) {
+
+        item.style.opacity = "0";
+        item.style.transform = "translateY(25px)";
+        item.style.transition = "all 0.7s ease";
+
+        footerObserver.observe(item);
+
+    });
+
+});
+
+</script>
+
+</footer>
+
+
+</body>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- <link rel="stylesheet" href="script.js"> -->
+</html>
